@@ -19,8 +19,9 @@ type Client struct {
 }
 
 // New creates an HealthOmics client using the default AWS credential chain.
-func New(ctx context.Context, region string) (*Client, error) {
-	cfg, err := config.LoadDefaultConfig(ctx, config.WithRegion(region))
+func New(ctx context.Context, region string, optFns ...func(*config.LoadOptions) error) (*Client, error) {
+	opts := append([]func(*config.LoadOptions) error{config.WithRegion(region)}, optFns...)
+	cfg, err := config.LoadDefaultConfig(ctx, opts...)
 	if err != nil {
 		return nil, fmt.Errorf("load AWS config: %w", err)
 	}
