@@ -39,7 +39,6 @@ type RunSpec struct {
 	JobName         string
 }
 
-
 // StartRun submits a HealthOmics workflow run and returns the run ID.
 func (c *Client) StartRun(ctx context.Context, spec RunSpec) (string, error) {
 	input := &omics.StartRunInput{
