@@ -1,5 +1,11 @@
 # ood-omics-adapter
 
+[![CI](https://github.com/scttfrdmn/ood-omics-adapter/actions/workflows/ci.yml/badge.svg)](https://github.com/scttfrdmn/ood-omics-adapter/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/scttfrdmn/ood-omics-adapter)](https://goreportcard.com/report/github.com/scttfrdmn/ood-omics-adapter)
+[![codecov](https://codecov.io/gh/scttfrdmn/ood-omics-adapter/branch/main/graph/badge.svg)](https://codecov.io/gh/scttfrdmn/ood-omics-adapter)
+[![Go Reference](https://pkg.go.dev/badge/github.com/scttfrdmn/ood-omics-adapter.svg)](https://pkg.go.dev/github.com/scttfrdmn/ood-omics-adapter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 OOD compute adapter for AWS HealthOmics Workflows. Translates Open OnDemand job submissions to AWS HealthOmics API calls.
 
 ## Commands
