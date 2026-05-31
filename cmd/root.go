@@ -9,7 +9,10 @@ var (
 	roleArn string
 )
 
+var version = "dev" // overridden at release time via -ldflags -X .../cmd.version
+
 var rootCmd = &cobra.Command{
+	Version: version,
 	Use:   "ood-omics-adapter",
 	Short: "OOD compute adapter for AWS HealthOmics",
 	Long:  "Translates Open OnDemand job submissions to AWS HealthOmics Workflows API calls.",
