@@ -47,7 +47,7 @@ var submitCmd = &cobra.Command{
 		}
 
 		ctx := context.Background()
-		client, err := omics.New(ctx, region)
+		client, err := omics.New(ctx, region, awsOptions(ctx)...)
 		if err != nil {
 			return err
 		}
